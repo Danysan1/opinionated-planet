@@ -18,16 +18,16 @@ def download_deprecated_wiki(wiki_file_name:str):
 CARRY_VALUE = "__CARRY__"
 
 DEPRECATED_FEATURES_REGEX = [[
-    lambda x: [x[0],x[1],None if x[2]=="*" else x[2],x[3],x[4],x[5],x[6],x[7],"dkey_dvalue_fixed_fixed"],
+    lambda x: [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],"dkey_dvalue_fixed_fixed"],
     r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)\|dvalue ?= ?([\*_\w]+)\|?.*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)\|?.*
 \|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+(\w+)(?:/\w+)?\}\}(?:[+<br />]+\{\{(?:key|tag)\|([:_\w]+)\|+(\w+)\}\})?.*
 ?.*
 ?\|(\d+)\}\}''',
 ],[
     lambda x: [x[0],x[1],x[2],x[3],"yes",None,None,x[4],"dkey_dvalue_yes"],
     r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)\|dvalue ?= ?([\*_\w]+)\|?.*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)\|?.*
 \|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|*\}\}.*
 ?.*
 ?\|(\d+)\}\}''',
@@ -81,6 +81,7 @@ class DeprecatedCounterHandler(osmium.SimpleHandler):
     def __init__(self, deprecated_df:pd.DataFrame, writer:osmium.SimpleWriter):
         super(DeprecatedCounterHandler, self).__init__()
         self.deprecated_df = deprecated_df
+        self.carry_value = self.deprecated_df["old_value"] == CARRY_VALUE
         self.deprecated_key_set = set(deprecated_df["old_key"]) # Used for faster lookup
         self.actions = []
         self.writer = writer
@@ -89,7 +90,7 @@ class DeprecatedCounterHandler(osmium.SimpleHandler):
         ret = True
         for k,v in tags:
             if k in self.deprecated_key_set:
-                deprecated_mask = (self.deprecated_df["old_key"]==k) & (self.deprecated_df["old_value"]==v)
+                deprecated_mask = (self.deprecated_df["old_key"]==k) & (self.carry_value | (self.deprecated_df["old_value"]==v))
                 if deprecated_mask.any():
                     print(tags)
                     #deprecated_row = self.deprecated_df[deprecated_mask][0]
