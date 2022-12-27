@@ -1,0 +1,848 @@
+{|class="wikitable sortable"
+|-
+!scope="col" style="width:7em"| {{{date|Date}}}
+!scope="col"| {{{old_kv|Deprecated key/value}}}
+!scope="col" data-sort-type="number" | {{{usage|Current usage}}}
+!scope="col"| {{{suggestion|Suggestion of replacement}}}
+!scope="col" style="width:1.5em"| N
+!scope="col"| {{{reason|Reason}}}
+
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-12-31
+|dkey=emergency|dvalue=aed
+|suggestion={{tag|emergency|defibrillator}}
+|58}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-06-13
+|dkey=amenity|dvalue=emergency_phone
+|suggestion={{Tag|emergency|phone}}
+|47}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-09-11
+|dkey=amenity|dvalue=fire_hydrant
+|suggestion={{Tag|emergency|fire_hydrant}}
+|64}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-01-08
+|dkey=aerialway|dvalue=canopy
+|suggestion={{Tag|aerialway|zip_line}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=amenity|dvalue=abandoned
+|suggestion=[[Key:abandoned:|abandoned:]]
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-04-06
+|dkey=amenity|dvalue=advertising
+|suggestion={{Tag|advertising|}}
+|11}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-18
+|dkey=amenity|dvalue=artwork
+|suggestion={{Tag|tourism|artwork}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-08
+|dkey=amenity|dvalue=car_repair
+|suggestion={{Tag|shop|car_repair}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=amenity|dvalue=citymap_post
+|suggestion={{Tag|tourism|information}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-18
+|dkey=amenity|dvalue=community_center
+|suggestion={{Tag|amenity|community_centre}}
+|39}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=amenity|dvalue=creche|dvalue_nolink=1
+|suggestion={{Tag|amenity|childcare}}<br /> '''or'''<br /> {{Tag|amenity|kindergarten}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=amenity|dvalue=disused
+|suggestion={{Tag|disused:amenity|}}, or such
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-02
+|dkey=amenity|dvalue=dog_bin
+|suggestion={{Tag|amenity|waste_basket}}+<br /> {{Tag|waste||dog_excrement}}<br /> '''or'''<br /> {{Tag|amenity|vending_machine}}+<br /> {{Tag|vending|excrement_bags}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-02
+|dkey=amenity|dvalue=dog_waste_bin
+|suggestion={{Tag|amenity|waste_basket}}+<br /> {{Tag|waste||dog_excrement}}<br /> '''or'''<br /> {{Tag|amenity|vending_machine}}+<br /> {{Tag|vending|excrement_bags}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-08
+|dkey=amenity|dvalue=education
+|suggestion={{Tag|amenity|college}}<br /> '''or'''<br /> {{Tag|amenity|school}}<br /> '''or'''<br /> {{Tag|amenity|college}}<br /> '''or'''<br /> {{Tag|amenity|university}}<br /> '''or'''<br /> {{Tag|office|tutoring}}
+|12}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-05-13
+|dkey=amenity|dvalue=ev_charging
+|suggestion={{Tag|amenity|charging_station}}
+|26}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2009-10
+|dkey=amenity|dvalue=garages
+|suggestion={{Tag|amenity|parking}}+<br /> {{Tag|parking|}}<br /> '''or'''<br /> {{Tag|landuse|garages}}
+|50}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2007
+|dkey=amenity|dvalue=hotel
+|suggestion={{Tag|tourism|hotel}}
+|7}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-22
+|dkey=amenity|dvalue=kiosk
+|suggestion={{Tag|shop|kiosk}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=amenity|dvalue=nursery
+|suggestion={{Tag|amenity|childcare}}<br /> '''or'''<br /> {{Tag|amenity|kindergarten}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=amenity|dvalue=park
+|suggestion={{Tag|leisure|park}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-18
+|dkey=amenity|dvalue=preschool
+|suggestion={{Tag|amenity|kindergarten}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=amenity|dvalue=proposed
+|suggestion={{Tag|proposed:amenity|}}, or such
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-06-07
+|dkey=amenity|dvalue=real_estate
+|suggestion={{Tag|office|estate_agent}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-04
+|dkey=amenity|dvalue=sauna
+|suggestion={{Tag|leisure|sauna}}
+|32}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2007-07-16
+|dkey=amenity|dvalue=shop
+|suggestion={{Tag|shop}}
+|1}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-10-20
+|dkey=amenity|dvalue=winery
+|suggestion={{Tag|shop|winery}}<br /> '''or'''<br /> {{Tag|craft|winery}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-11-07
+|dkey=amenity|dvalue=youth_centre
+|suggestion={{Tag|amenity|community_centre}} + {{Tag|community_centre:for|juvenile}}<br /> '''or'''<br /> {{Tag|community_centre:for|child;juvenile}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=arch|dvalue_nolink=1
+|suggestion={{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|arch}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=beam|dvalue_nolink=1
+|suggestion={{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|beam}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=humpback|dvalue_nolink=1
+|suggestion={{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|humpback}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=lift|dvalue_nolink=1
+|suggestion={{Tag|bridge|movable}}+<br /> {{Tag|bridge:movable|lift}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=pontoon|dvalue_nolink=1
+|suggestion={{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|floating}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=suspension|dvalue_nolink=1
+|suggestion={{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|suspension}}
+|25}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-06
+|dkey=bridge|dvalue=swing|dvalue_nolink=1
+|suggestion={{Tag|bridge|movable}}+<br /> {{Tag|bridge:movable|swing}}<br /> '''or'''<br /> {{Tag|bridge|yes}}+<br /> {{Tag|bridge:structure|simple-suspension}}
+|24}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012
+|dkey=building:type
+|suggestion={{Tag|building|}}
+|29}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018
+|dkey=building|dvalue=condominium
+|suggestion={{Key|building|apartments}}
+|56}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2011-10-27
+|dkey=building|dvalue=entrance
+|suggestion={{Tag|entrance|}}
+|14}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-01-31
+|dkey=car
+|suggestion={{Tag|motorcar|}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2006
+|dkey=class
+|suggestion={{Tag|highway}}
+|2}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012-11-28
+|dkey=color
+|suggestion={{Tag|colour|}}
+|18}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=date_off
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=date_on
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=day_off
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=day_on
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-06-28
+|dkey=camp_site|dvalue=pitch
+|suggestion={{Tag|tourism|camp_pitch}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-06-28
+|dkey=camp_site|dvalue=camp_pitch
+|suggestion={{Tag|tourism|camp_pitch}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-12-01
+|dkey=amenity|dvalue=embassy
+|suggestion={{Tag|office|diplomatic}} and {{Tag|diplomatic|embassy}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-06-12
+|dkey=diaper
+|suggestion={{Tag|changing_table}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-05-01
+|dkey=drinkable
+|suggestion={{Tag|drinking_water}}
+|21}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012-09-14
+|dkey=escalator
+|suggestion={{Tag|highway|steps}}+<br /> {{Tag|conveying}}
+|38}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-10-19
+|dkey=fenced|dvalue=yes
+|suggestion={{Tag|barrier|fence}}
+|48}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=highway|dvalue=abandoned
+|suggestion={{Tag|abandoned:highway|}}, or such
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2009-08
+|dkey=highway|dvalue=byway
+|suggestion={{Tag|highway||track/path}} +<br /> {{Tag|designation||byway_open_to_all_traffic}} or {{Tag|designation||restricted_byway}}<br /> {{Tag|access}}
+|13}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012
+|dkey=highway|dvalue=ford
+|suggestion={{Tag|ford|}}
+|17}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-06-12
+|dkey=highway|dvalue=incline_steep
+|suggestion={{Tag|incline}}
+|3}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-06-12
+|dkey=highway|dvalue=incline
+|suggestion={{Tag|incline}}
+|3}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2007
+|dkey=highway|dvalue=minor
+|suggestion={{Tag|highway|tertiary}} or {{Tag|highway|unclassified}} or {{Tag|highway|service}} or such
+|9}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-09-21
+|dkey=highway|dvalue=no|dvalue_nolink=1
+|suggestion=No tags
+|33}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-10-19
+|dkey=highway|dvalue=stile
+|suggestion={{Tag|barrier|stile}}
+|4}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-03-19
+|dkey=highway|dvalue=unsurfaced
+|suggestion={{Tag|highway}} +<br /> {{Tag|surface|unpaved}}<br /><br /> {{Tag|highway|track}}
+|5}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-10-19
+|dkey=historic_name
+|suggestion={{Tag|old_name}}<br /> '''or'''<br /> {{Tag|name}}
+|37}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-21
+|dkey=historic|dvalue=abandoned
+|suggestion={{Tag|abandoned:historic|}}, or such
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-01-10
+|dkey=historic|dvalue=icon|dvalue_nolink=1
+|suggestion=No
+|6}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-01-20
+|dkey=historic|dvalue=museum|dvalue_nolink=1
+|suggestion={{Tag|tourism|museum}}
+|16}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=hour_off
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-10-22
+|dkey=hour_on
+|suggestion=[[Conditional restrictions]]<br /> '''or'''<br /> {{Tag|opening_hours}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010
+|dkey=landuse|dvalue=farm
+|suggestion={{Tag|landuse|farmland}}<br /> '''or'''<br /> {{Tag|landuse|farmyard}}
+|36}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010
+|dkey=landuse|dvalue=field
+|suggestion={{Tag|landuse|farmland}}
+|46}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2011-05-09
+|dkey=landuse|dvalue=pond
+|suggestion={{Tag|natural|water}}+<br /> {{Tag|water|pond}}|30}} 
+{{Deprecated features/item|lang={{{lang|}}}|date=2011-05-09
+|dkey=landuse|dvalue=reservoir
+|suggestion={{Tag|natural|water}}+<br /> {{Tag|water|reservoir}}
+|30}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2007-07-16
+|dkey=landuse|dvalue=wood
+|suggestion={{Tag|landuse|forest}}<br /> '''or'''<br /> {{Tag|natural|wood}}
+|8}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-13
+|dkey=leisure|dvalue=beach
+|suggestion={{Tag|natural|beach}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-08-02
+|dkey=leisure|dvalue=club
+|suggestion={{key|club}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=leisure|dvalue=gambling
+|suggestion={{Tag|amenity|gambling}} or such
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-01-27
+|dkey=leisure|dvalue=video_arcade
+|suggestion={{Tag|leisure|adult_gaming_centre}} for venues with gambling machines;<br /> '''or'''<br /> {{Tag|leisure|amusement_arcade}} for venues with pay-to-play games.
+|44}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-06
+|dkey=man_made|dvalue=cooling_tower
+|suggestion={{Tag|man_made|tower}}+<br /> {{Tag|tower:type|cooling}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=man_made|dvalue=cut_line
+|suggestion={{Tag|man_made|cutline}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-06-17
+|dkey=man_made|dvalue=hot_water_tank
+|suggestion={{Tag|man_made|storage_tank}}+<br /> {{Tag|content|hot_water}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-05-23
+|dkey=man_made|dvalue=jetty
+|suggestion={{Tag|man_made|pier}}
+|42}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=man_made|dvalue=village_pump|dvalue_nolink=1
+|suggestion={{Tag|man_made|water_well}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-07-09
+|dkey=man_made|dvalue=water_tank
+|suggestion={{Tag|man_made|storage_tank}}+<br /> {{Tag|content|water}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=man_made|dvalue=well
+|suggestion={{Tag|man_made|water_well}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-03-19
+|dkey=name:botanical
+|suggestion={{Tag|species}}
+|37}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2011-08-31
+|dkey=natural|dvalue=land
+|suggestion=Relation {{Tag|type|multipolygon}}<br /> '''or'''<br /> {{Tag|natural|coastline}}
+|15}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-11-18
+|dkey=natural|dvalue=marsh
+|suggestion={{Tag|natural|wetland}} +<br /> {{Tag|wetland|marsh}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-03-08
+|dkey=natural|dvalue=moor
+|suggestion=Look the {{Tag|natural|moor}} page for lots of suggestions.
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2009-08-08
+|dkey=noexit|dvalue=no
+|suggestion={{Tag|fixme||Continue}}
+|40}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-03-02
+|dkey=office|dvalue=administrative
+|suggestion={{Tag|office|government}}
+|55}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-06-07
+|dkey=office|dvalue=real_estate_agent
+|suggestion={{Tag|office|estate_agent}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-06-07
+|dkey=office|dvalue=real_estate
+|suggestion={{Tag|office|estate_agent}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012-12-08
+|dkey=place_name
+|suggestion={{Tag|name}}
+|23}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-06-30
+|dkey=pole|dvalue=transition
+|suggestion={{Tag|location:transition|yes}}
+|54}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010-09
+|dkey=power_rating
+|suggestion={{Tag|generator:output|}}
+|28}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010-09
+|dkey=power_source
+|suggestion={{Tag|generator:source|}}
+|28}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-01-24
+|dkey=power|dvalue=station
+|suggestion={{Tag|power|substation}}<br /> '''or'''<br /> {{Tag|power|plant}}<br /> '''or'''<br /> {{Tag|power|generator}}
+|19}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-11-25
+|dkey=power|dvalue=sub_station
+|suggestion={{Tag|power|substation}}
+|19}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-02-01
+|dkey=power|dvalue=underground_cable
+|suggestion={{Tag|power|cable}} + {{Tag|location||underground}}
+|54}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-10-24
+|dkey=railway|dvalue=preserved
+|suggestion={{Tag|historic||railway}}+<br /> {{Tag|railway|rail}} (or whatever type) +<br /> {{Tag|railway:preserved||yes}}
+|41}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-05-30
+|dkey=route|dvalue=ncn
+|suggestion=[[Cycle_routes]]
+|27}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2007-07-16
+|dkey=shop|dvalue=*
+|suggestion={{Tag|shop|yes}}<br /> '''or'''<br /> {{Tag|shop|}} (the actual shop type)
+|51}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-08
+|dkey=shop|dvalue=antique
+|suggestion={{Tag|shop|antiques}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012-03-08
+|dkey=shop|dvalue=auto_parts
+|suggestion={{Tag|shop|car_parts}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-01-27
+|dkey=shop|dvalue=betting
+|suggestion={{Tag|shop|bookmaker}}<br /> '''or'''<br /> {{Tag|shop|lottery}}<br /><br /> See also [[Tag:shop=betting]].
+|44}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=shop|dvalue=disused
+|suggestion={{Tag|disused:shop|}}, or such
+|49}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-06
+|dkey=shop|dvalue=dive
+|suggestion={{Tag|shop|scuba_diving}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010-06-06
+|dkey=shop|dvalue=fish
+|suggestion={{Tag|shop|seafood}} (see also [[Tag:shop=fish]]).
+|45}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010-06-06
+|dkey=shop|dvalue=fishmonger
+|suggestion={{Tag|shop|seafood}}
+|45}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-20
+|dkey=shop|dvalue=furnace
+|suggestion={{Tag|shop|fireplace}}
+|52}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=shop|dvalue=gallery
+|suggestion={{Tag|shop|art}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-01-27
+|dkey=shop|dvalue=gambling
+|suggestion={{Tag|amenity|gambling}} (see also [[Tag:shop=gambling]]).
+|44}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-06
+|dkey=shop|dvalue=glass
+|suggestion={{Tag|craft|glaziery}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-07
+|dkey=shop|dvalue=moneylender
+|suggestion={{Tag|shop|money_lender}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2012-02-11
+|dkey=shop|dvalue=organic
+|suggestion={{Tag|shop|}}+<br /> {{Tag|organic|}}
+|34}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-12-08
+|dkey=shop|dvalue=perfume
+|suggestion={{Tag|shop|perfumery}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2015-06-07
+|dkey=shop|dvalue=real_estate
+|suggestion={{Tag|office|estate_agent}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-04-23
+|dkey=shop|dvalue=vehicles
+|suggestion=Specific values of {{tag|shop}} such as {{tag|shop|car}}, {{tag|shop|bicycle}}, {{tag|shop|boat}} etc. instead
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-06-10
+|dkey=natural|dvalue=riverbed
+|suggestion={{Tag|natural|water}}+{{Tag|water|river}}+{{Tag|intermittent||yes}} (if often water)<br>'''or''' {{Tag|natural||shingle/sand...}} (if almost never water) instead
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=shop|dvalue=window
+|suggestion={{Tag|craft|window_construction}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=shop|dvalue=windows
+|suggestion={{Tag|craft|window_construction}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2013-12-23
+|dkey=sport|dvalue=diving
+|suggestion={{Tag|sport|scuba_diving}}<br /> '''or'''<br /> {{Tag|sport|cliff_diving}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2010-08-25
+|dkey=sport|dvalue=gaelic_football
+|suggestion={{Tag|sport|gaelic_games}}+<br /> specific tag of gaelic game
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-09-13
+|dkey=sport|dvalue=paragliding
+|suggestion={{Tag|sport|free_flying}}<br />
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-05-28
+|dkey=tourism|dvalue=bed_and_breakfast
+|suggestion={{Tag|tourism|guest_house}}+<br /> {{Tag|guest_house|bed_and_breakfast}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2008-03-19
+|dkey=waterway|dvalue =mooring
+|suggestion={{Tag|mooring}}
+|10}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2016-01-02
+|dkey=waterway|dvalue=wadi
+|suggestion={{Tag|waterway|stream}} or {{Tag|waterway|river}}<br /> +{{Tag|intermittent|yes}}<br /> '''or/and'''<br /> {{Tag|natural|valley}}
+|53}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-06-06
+|dkey=wood|dvalue=deciduous
+|suggestion={{Tag|leaf_cycle|deciduous}}
+|22}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2014-06-06
+|dkey=wood
+|suggestion={{Tag|leaf_type}}<br /> '''or'''<br />{{Tag|leaf_cycle}}
+|22}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-10-27
+|dkey=man_made|dvalue=MDF
+|suggestion={{Tag|telecom|exchange}}
+|35}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-10-27
+|dkey=man_made|dvalue=telephone_exchange
+|suggestion={{Tag|telecom|exchange}}
+|35}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-10-27
+|dkey=telecom|dvalue=central_office
+|suggestion={{Tag|telecom|exchange}}
+|35}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-10-27
+|dkey=telecom|dvalue=outdoor_dslam
+|suggestion={{Tag|telecom|service_device}}
+|35}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2018-10-27
+|dkey=telecom|dvalue=street_cabinet
+|suggestion={{Tag|man_made|street_cabinet}} + {{Tag|street_cabinet|telecom}}
+|35}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-03-26
+|dkey=shop|dvalue=underwear
+|suggestion={{tag|shop|clothes}} + {{tag|clothes|underwear}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-07-31
+|dkey=access|dvalue=public
+|suggestion={{Tag|access|yes}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-10-27
+|dkey=power|dvalue=marker
+|suggestion={{Tag|marker}} + {{Tag|utility|power}}
+|57}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-10-27
+|dkey=power|dvalue=cable_distribution_cabinet
+|suggestion={{Tag|man_made|street_cabinet}} + {{Tag|utility|power}}
+|60}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2019-10-27
+|dkey=pipeline|dvalue=marker
+|suggestion={{Tag|marker}} + {{Tag|subject|pipeline}}
+|57}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-7-14<!--date of documenting as deprecated, not deprecation date-->
+|dkey=role
+|suggestion=Use relations. for eg {{Key|type|multipolygon}} for role=outer/inner, {{Key|type|restriction}} for roles=from/to, {{Key|type|waterway}} for role=main_stream
+|62}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-11-12<!--date of documenting as deprecated, not deprecation date-->
+|dkey=wetland|dvalue=saltern
+|suggestion={{tag|landuse|salt_pond}}
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-5<!--date of documenting as deprecated, not deprecation date-->
+|dkey=protect_class|dvalue=23
+|suggestion={{tag|boundary|special_economic_zone}}
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=air_traffic
+|suggestion={{tag|hazard|low_flying_aircraft}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=bend
+|suggestion={{tag|hazard|curve}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=bicycle
+|suggestion={{tag|hazard|cyclists}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=bicycles
+|suggestion={{tag|hazard|cyclists}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=cattle
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|cow}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=deer
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|moose}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=reindeer
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|reindeer}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=wild_animal
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|wild_animal}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=wild_animals
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|wild_animal}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=farm_animals
+|suggestion={{tag|hazard|animal_crossing}} + {{tag|hazard:animal|livestock}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=crosswinds
+|suggestion={{tag|hazard|side_winds}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=dangerous_turn
+|suggestion={{tag|hazard|turn}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=pedestrian
+|suggestion={{tag|hazard|pedestrians}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=playing_children
+|suggestion={{tag|hazard|children}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=rockfall
+|suggestion={{tag|hazard|falling_rocks}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=rock_slide
+|suggestion={{tag|hazard|landslide}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=hazard|dvalue=slippery_road
+|suggestion={{tag|hazard|slippery}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-12-27<!--date of documenting as deprecated, not deprecation date-->
+|dkey=protect_class|dvalue=16
+|suggestion={{tag|hazard}}
+|63}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2017-04-12
+|dkey=highway|dvalue=razed
+|suggestion={{key|razed:}} prefix, or more specifically {{key|razed:highway}} (or other [[lifecycle prefix]])
+|85}}
+{{Deprecated features/item|lang={{{lang|}}}|date=[[Mechanical Edits/Mateusz Konieczny - bot account/moving building=building to building=yes|2018]] (maybe 2013)
+|dkey=building|dvalue=building
+|suggestion={{tag|building|yes}}
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-01-17
+|dkey=protect_class|dvalue=25
+|suggestion={{tag|landuse|military}}+{{tag|military}}
+|87}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=swimming_pool
+|suggestion={{tag|leisure|swimming_pool}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=shop|dvalue=lingerie
+|suggestion={{tag|shop|clothes}}+{{tag|clothes|underwear}}
+|20}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=gym
+|suggestion={{tag|leisure|sports_centre}}
+or {{tag|leisure|fitness_centre}}
+|7}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=office
+|suggestion={{tag|office}}
+|88}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=hospice
+|suggestion={{tag|healthcare|hospice}}
+or {{tag|amenity|social_facility}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=clothes|dvalue=lingerie
+|suggestion={{tag|clothes|underwear}}
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=clothes|dvalue=bridal
+|suggestion={{tag|clothes|wedding}}
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=public_building
+|suggestion=various
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=tomb|dvalue=cenotaph
+|suggestion={{tag|historic|memorial}}
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=shop|dvalue=photography
+|suggestion={{tag|shop|photo}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-27
+|dkey=site_type|dvalue=
+|suggestion={{tag|archaeological_site}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=life_ring
+|suggestion={{tag|emergency|life_ring}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=administration
+|suggestion={{tag|office|government}} or such
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=access|dvalue=restricted
+|suggestion={{tag|access|private}} or (depending on situation and other present tags) - {{Tag|access|forestry}}, {{Tag|access|agricultural}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=office|dvalue=healthcare
+|suggestion=various
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-03
+|dkey=amenity|dvalue=private_toilet
+|suggestion=None
+|91}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-03
+|dkey=amenity|dvalue=house
+|suggestion={{tag|building|house}}
+|7}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-03
+|dkey=amenity|dvalue=healthcare
+|suggestion=See [[Healthcare]]
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-03
+|dkey=amenity|dvalue=health_centre
+|suggestion=See [[Healthcare]]
+|84}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=office|dvalue=tax
+|suggestion={{tag|office|government}} + {{tag|government|tax}} or {{Tag|office|tax_advisor}}
+|55}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=register_office
+|suggestion={{tag|office|government}} + {{tag|government|register_office}}
+|55}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=sport|dvalue=hockey
+|suggestion={{tag|sport|ice_hockey}} or {{tag|sport|field_hockey}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=sport|dvalue=football
+|suggestion={{tag|sport}} (various values)
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=sport|dvalue=shooting_range
+|suggestion={{tag|sport|shooting}} + "physical" tag
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-02
+|dkey=amenity|dvalue=club
+|suggestion={{tag|club}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-05-19
+|dkey=post_office:type
+|suggestion={{tag|post_office}}
+|95}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-05-21
+|dkey=landuse|dvalue=school
+|suggestion={{Tag|landuse|education}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2021-09
+|dkey=residential|dvalue=condominium
+|suggestion={{key|residential|apartments}}
+|56}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-01-03
+|dkey=vending|dvalue=parcel_mail_in
+|suggestion={{Tag|amenity|parcel_locker}} with {{Tag|parcel_mail_in|yes}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-01-03
+|dkey=vending|dvalue=parcel_pickup
+|suggestion={{Tag|amenity|parcel_locker}}
+|31}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-01-04
+|dkey=no_overtaking
+|suggestion={{key|overtaking}}
+|96}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-01-02
+|dkey=embassy|dvalue=embassy
+|suggestion={{Tag|embassy|yes}}
+|97}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-02-27
+|dkey=boundary|dvalue=forestry_compartment
+|suggestion={{Tag|boundary|forest_compartment}}
+|98}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-01-24
+|dkey=building|dvalue=collapsed
+|suggestion={{Tag|demolished:building}} or {{Tag|building|ruins}} or delete the object
+|99}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-01-15
+|dkey=building|dvalue=abandoned
+|suggestion={{Tag|building}} + {{Tag|abandoned||yes}}
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2020-01-15
+|dkey=building|dvalue=disused
+|suggestion={{Tag|building}} + {{Tag|disused||yes}}
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-09-28
+|dkey=door|dvalue=loadingdock
+|suggestion={{Tag|amenity|loading_dock}}
+|dvalue_nolink=1
+|90}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-11-27
+|dkey=manufacturer:type
+|suggestion={{Key|model}}
+|59}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-11-27
+|dkey=vehicle:wikidata
+|suggestion={{Key|model:wikidata}}
+|59}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-11-27
+|dkey=vehicle:wikipedia
+|suggestion={{Key|model:wikipedia}}
+|59}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:lane:left
+|suggestion={{key|parking:left}}
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:lane:right
+|suggestion={{key|parking:right}}
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:lane:both
+|suggestion={{key|parking:both}}
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:condition:left
+|suggestion=[[Street_parking#Legal_properties]]
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:condition:right
+|suggestion=[[Street_parking#Legal_properties]]
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:condition:both
+|suggestion=[[Street_parking#Legal_properties]]
+|65}}
+{{Deprecated features/item|lang={{{lang|}}}|date=2022-12-08
+|dkey=parking:orientation
+|suggestion={{Key|orientation}}
+|65}}
+|}<noinclude>{{Documentation}}</noinclude>
