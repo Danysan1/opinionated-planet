@@ -15,40 +15,59 @@ def download_deprecated_wiki(wiki_file_name:str) -> str:
     
     return wiki_text
 
-CARRY_VALUE = "__CARRY__"
+DEPRECATED_REGEX_TYPE = "regex_type"
+DEPRECATED_DKEY_DVALUE_FIXED = "dkey_dvalue_fixed"
+DEPRECATED_DKEY_DVALUE_FIXED_FIXED = "dkey_dvalue_fixed_fixed"
+DEPRECATED_DKEY_DVALUE_YES = "dkey_dvalue_yes"
+DEPRECATED_DKEY_FIXED_CARRY = "dkey_fixed_carry"
+DEPRECATED_DKEY_CARRY = "dkey_carry"
+DEPRECATED_CARRY_VALUE = "__CARRY__"
+DEPRECATED_OLD_KEY = "old_key"
+DEPRECATED_OLD_VALUE = "old_value"
+DEPRECATED_NEW_KEY_1 = "new_key_1"
+DEPRECATED_NEW_VALUE_1 = "new_value_1"
+DEPRECATED_NEW_KEY_2 = "new_key_2"
+DEPRECATED_NEW_VALUE_2 = "new_value_2"
 
 DEPRECATED_FEATURES_REGEX = [[
-    lambda x: [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],"dkey_dvalue_fixed_fixed"],
-    r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)\|?.*
-\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+(\w+)(?:/\w+)?\}\}(?:[+<br />]+\{\{(?:key|tag)\|([:_\w]+)\|+(\w+)\}\})?.*
+    lambda x: [x[0],x[1],x[2],x[3],x[4],None,None,x[5],DEPRECATED_DKEY_DVALUE_FIXED],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)(?:\|dvalue_nolink=.+)?
+\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+([_\w]+)(?:\/\w+)?\}\}[^+\n]*(?:
+.*)?
+?\|(\d+)\}\}''',
+],[
+    lambda x: [x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],DEPRECATED_DKEY_DVALUE_FIXED_FIXED],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)(?:\|dvalue_nolink=.+)?
+\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+([_\w]+)(?:\/\w+)?\}\}[+<br />]+\{\{(?:key|tag)\|([:_\w]+)\|+([_\w]+)\}\}.*
 ?.*
 ?\|(\d+)\}\}''',
 ],[
-    lambda x: [x[0],x[1],x[2],x[3],"yes",None,None,x[4],"dkey_dvalue_yes"],
-    r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)\|?.*
-\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|*\}\}.*
+    lambda x: [x[0],x[1],x[2],x[3],"yes",None,None,x[4],DEPRECATED_DKEY_DVALUE_YES],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)(?:\|dvalue_nolink=.+)?
+\|suggestion=\{\{(?:key|tag)\|([_\w]+)\|*\}\}.*
 ?.*
 ?\|(\d+)\}\}''',
 ],[
-    lambda x: [x[0],x[1],x[2],x[3],"yes",None,None,x[4],"dkey_dvalue_square_yes"],
-    r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)\|?.*
-\|suggestion=\[\[(?:key|tag):(\w+).+\]\].*
+    lambda x: [x[0],x[1],x[2],x[3],"yes",None,None,x[4],DEPRECATED_DKEY_DVALUE_YES],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)\|dvalue ?= ?([_\w]+)(?:\|dvalue_nolink=.+)?
+\|suggestion=\[\[(?:key|tag):([_\w]+).+\]\].*
 ?.*
 ?\|(\d+)\}\}''',
 ],[
-    lambda x: [x[0],x[1],CARRY_VALUE,x[2],x[3],x[4],CARRY_VALUE,x[5],"dkey_fixed_carry"],
-    r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)
-\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+(\w+)(?:/\w+)?\}\}(?:[+<br />]+\{\{(?:key|tag)\|([:_\w]+)\}\})?.*
+    lambda x: [x[0],x[1],DEPRECATED_CARRY_VALUE,x[2],x[3],x[4],DEPRECATED_CARRY_VALUE,x[5],DEPRECATED_DKEY_FIXED_CARRY],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)(?:\|dvalue_nolink=.+)?
+\|suggestion=\{\{(?:key|tag)\|([:_\w]+)\|+([_\w]+)(?:\/\w+)?\}\}(?:[+<br />]+\{\{(?:key|tag)\|([:_\w]+)\}\})?.*
 ?.*
 ?\|(\d+)\}\}''',
 ],[
-    lambda x: [x[0],x[1],CARRY_VALUE,x[2],CARRY_VALUE,None,None,x[3],"dkey_carry"],
-    r'''\{\{Deprecated features/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
-\|dkey=([:_\w]+)
+    lambda x: [x[0],x[1],DEPRECATED_CARRY_VALUE,x[2],DEPRECATED_CARRY_VALUE,None,None,x[3],DEPRECATED_DKEY_CARRY],
+    r'''\{\{Deprecated features\/item\|lang=\{\{\{lang\|\}\}\}\|date=([\d-]*).*
+\|dkey=([:_\w]+)(?:\|dvalue_nolink=.+)?
 \|suggestion=\{\{(?:key|tag)\|+([:_\w]+)\|?\}\}.*
 ?.*
 ?\|(\d+)\}\}''',
@@ -62,7 +81,15 @@ def convert_deprecated_wiki_to_df(wiki_txt:str)->pd.DataFrame:
             for row in map(expr[0], re.findall(expr[1], wiki_txt, flags=re.IGNORECASE))
         ],
         columns=[
-            "date","old_key","old_value","new_key_1","new_value_1","new_key_2","new_value_2","id","regex_type"
+            "date",
+            DEPRECATED_OLD_KEY,
+            DEPRECATED_OLD_VALUE,
+            DEPRECATED_NEW_KEY_1,
+            "new_value_1",
+            "new_key_2",
+            "new_value_2",
+            "id",
+            DEPRECATED_REGEX_TYPE
         ]
     )
 
@@ -84,6 +111,7 @@ def get_deprecated_df():
         df.to_csv(csv_path)
     else:
         df = pd.read_csv(csv_path)
+    df[DEPRECATED_REGEX_TYPE] = df[DEPRECATED_REGEX_TYPE].astype("category")
     
     print("Deprecated features DataFrame:\n", df.describe(include = 'all'))
     return df

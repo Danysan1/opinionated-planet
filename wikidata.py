@@ -67,13 +67,15 @@ def buildSparqlLabelQuery(wikidata_ids) -> str:
         }}
     """
 
+WDQS_MAX_SIZE = 300
+
 def fetch_wikidata_labels_df(wikidata_ids:set) -> pd.DataFrame:
     labels = []
     wikidata_ids_list = list(wikidata_ids)
 
     print("Pre Wikidata SPARQL query:", datetime.now().isoformat())
-    for i in range(0, len(wikidata_ids_list), 300): # Paging
-        query = buildSparqlLabelQuery(wikidata_ids_list[i:i+300])
+    for i in range(0, len(wikidata_ids_list), WDQS_MAX_SIZE): # Paging
+        query = buildSparqlLabelQuery(wikidata_ids_list[i:i+WDQS_MAX_SIZE])
         # with open("wikidata.rq", "w") as file:
         #     file.write(query)
         res = return_sparql_query_results(query)
