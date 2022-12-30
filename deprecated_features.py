@@ -3,6 +3,7 @@ import re
 import json
 from os import path
 import pandas as pd
+import logging
 
 def download_deprecated_wiki(wiki_file_name:str) -> str:
     url = "https://wiki.openstreetmap.org/w/api.php?action=query&format=json&titles=Template%3ADeprecated_features&redirects=0&prop=revisions&rvprop=content&indexpageids=1"
@@ -113,5 +114,5 @@ def get_deprecated_df():
         df = pd.read_csv(csv_path)
     df[DEPRECATED_REGEX_TYPE] = df[DEPRECATED_REGEX_TYPE].astype("category")
     
-    print("Deprecated features DataFrame:\n", df.describe(include = 'all'))
+    logging.info("Deprecated features DataFrame:\n%s", df.describe(include = 'all'))
     return df

@@ -1,4 +1,4 @@
-from urllib import request
+import logging
 import re
 import json
 from datetime import datetime
@@ -6,7 +6,7 @@ from os import path
 import pandas as pd
 import osmium
 from qwikidata.sparql import return_sparql_query_results
-import numpy as np
+from time import sleep
 
 WIKIDATA_Q_ID_REGEX = r"^Q\d+$"
 WIKIDATA_Q_IDS_REGEX = r"^Q\d+(?:;Q\d+)*$"
@@ -20,14 +20,14 @@ class WikidataIdHandler(osmium.SimpleHandler):
     def check(self, tags:osmium.osm.TagList):
         self.count+=1
         if self.count % 1_000_000 == 0:
-            print(f"Analysed elements: {self.count}")
+            logging.info("Analysed elements: %d", self.count)
 
         if "wikidata" in tags:
             qid = tags.get("wikidata").partition(";")[0]
             if re.match(WIKIDATA_Q_ID_REGEX, qid):
                 self.wd_ids.add(qid)
             else:
-                print("Skipping bad Q-ID", qid)
+                logging.info("Skipping bad Q-ID %s", qid)
 
     def node(self, n):
         self.check(n.tags)
@@ -42,16 +42,16 @@ def get_wikidata_ids(pbf_path:str, skip_cache:bool=False) -> set:
     file_path = f"{pbf_path}.wikidata_ids.csv"
     if skip_cache or not path.exists(file_path):
         handler = WikidataIdHandler()
-        print("Pre Wikidata ID search:", datetime.now().isoformat())
+        logging.info("Pre Wikidata ID search: %s", datetime.now().isoformat())
         handler.apply_file(pbf_path)
-        print("Post Wikidata ID search:", datetime.now().isoformat())
+        logging.info("Post Wikidata ID search: %s", datetime.now().isoformat())
         ret = handler.wd_ids
         with open(file_path,'w') as f:
             f.write('\n'.join(ret))
     else:
         ret = set(line.strip() for line in open(file_path,'r'))      
 
-    print(f"Found {len(ret)} IDs")
+    logging.info("Found %d IDs", len(ret))
     return ret
 
 def buildSparqlLabelQuery(wikidata_ids) -> str:
@@ -73,8 +73,10 @@ def fetch_wikidata_labels_df(wikidata_ids:set) -> pd.DataFrame:
     labels = []
     wikidata_ids_list = list(wikidata_ids)
 
-    print("Pre Wikidata SPARQL query:", datetime.now().isoformat())
+    logging.info("Pre Wikidata SPARQL query: %s", datetime.now().isoformat())
     for i in range(0, len(wikidata_ids_list), WDQS_MAX_SIZE): # Paging
+        if i % (WDQS_MAX_SIZE*10):
+            logging.info("Downloaded labels for %d entities", i)
         query = buildSparqlLabelQuery(wikidata_ids_list[i:i+WDQS_MAX_SIZE])
         # with open("wikidata.rq", "w") as file:
         #     file.write(query)
@@ -84,7 +86,8 @@ def fetch_wikidata_labels_df(wikidata_ids:set) -> pd.DataFrame:
                 x["lang"]["value"],
                 x["label"]["value"]
             ] for x in res["results"]["bindings"])
-    print("Post Wikidata SPARQL query:", datetime.now().isoformat())
+        sleep(0.4)
+    logging.info("Post Wikidata SPARQL query: %s", datetime.now().isoformat())
     
     df = pd.DataFrame(labels, columns=["id","lang","label"])
     df["key"] = "name:"+df["lang"]
@@ -99,5 +102,5 @@ def get_wikidata_labels_df(pbf_path:str, skip_cache:bool=False):
     else:
         df = pd.read_csv(csv_path)
     
-    print("Wikidata labels DataFrame:\n", df.describe(include = 'all'))
+    logging.info("Wikidata labels DataFrame:\n%s", df.describe(include = 'all'))
     return df
